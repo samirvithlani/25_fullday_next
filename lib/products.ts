@@ -118,3 +118,8 @@ export const products: Product[] = [
         description: "GPS smartwatch designed for running and fitness tracking."
     }
 ];
+
+export default function findById(id:string){
+
+    return products.find((p)=>String(p.id) == id)
+}
